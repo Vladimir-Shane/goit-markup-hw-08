@@ -373,40 +373,33 @@
     </div>
 </footer>
 <!-- ========MODAL WINDOW======== -->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop " data-modal>
     <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-btn-icon">
-              <use href="./images/icons.svg#icon-close"></use>
+              <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>  
         </button>
-        <form >
-            <ul class="form-list list">
+        <form class="form">
                 <p>Оставьте свои данные, мы вам перезвоним</p>
-                <li class="form-field">
-                    <label class="form-label" for="name">Имя</label>
-                    <input class="form-input" type="text" name="name" id="name">
-                </li>
-                <li class="form-field">
-                    <label class="form-label" for="phone">Телефон</label>
-                    <input class="form-input" type="tel" name="phone" id="phone">
-        
-                </li>
-                <li class="form-field">
-                    <label class="form-label" for="email">Почта</label>
-                    <input class="form-input" type="email" name="email" id="email">
-        
-                </li>
-                <li class="form-field">
-                    <label class="form-label" for="feedback">Комменарий</label>
-                    <textarea name="feedback" id="feedback" placeholder="Введите текст"></textarea>
-        
-                </li>
-                <li class="form-field">
-                    <input class="form-input" type="checkbox" name="confirmation" id="confirmation">
-                    <label class="form-label" for="confirmation">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                </li>
-            </ul>    
+                    <label class="form-label">Имя
+                        <input class="form-input" type="text" name="name">
+                    </label>
+                    <label class="form-label">Телефон
+                        <input class="form-input" type="tel" name="phone">
+                    </label>
+                    <label class="form-label">Почта
+                        <input class="form-input" type="email" name="email">
+                    </label>        
+                    <label class="form-label" for="feedback">Комменарий
+                        <textarea class="form-input" name="feedback" placeholder="Введите текст"></textarea>       
+                    </label>
+                    <label class="form-label checkbox">
+                        <input class="form-input visually-hidden" type="checkbox" name="modal-checkbox">
+                        <span></span>
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="form-link">Условия договора</a>
+                    </label>
+                    <button class="submit-button" type="submit">Отправить</button>
         </form>
             </div>
 </div>
