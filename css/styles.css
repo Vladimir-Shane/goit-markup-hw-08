@@ -664,16 +664,27 @@ align-items: center;
 
 }
 .form-label {
+    position: relative;
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     margin: 0px 40px 10px 40px;
-
     letter-spacing: 0.01em;
 
     color: var(--additional-text-color);
+}
+.modal-form-wrapper {
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+}
+
+.modal-form-icon {
+    width: 18px;
+    height: 18px;
 
 }
 .checkbox {
@@ -687,6 +698,7 @@ align-items: center;
 }
 .form-input {
     margin-top: 4px;
+    padding-left: 42px;
     width: 448px;
     height: 40px;
 }
