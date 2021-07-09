@@ -50,27 +50,21 @@ body {
 .list {
     list-style: none;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .section:not(.activities) {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 .section-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     color: var(--main-text-color);
     text-align: center;
-}
-.projects-title {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--main-text-color);
-}
-.projects-description {
-    font-size: 16px;
-    line-height: 1.88;
-    color: var(--additional-text-color);
 }
 /* ========END COMPONENTS======== */
 
@@ -264,6 +258,7 @@ align-items: center;
 
 /* ========ACTIVITIES======== */
 .activities {
+    padding-top: 0px;
     padding-bottom: 94px;
 }
 .activities-list {
@@ -367,9 +362,6 @@ align-items: center;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
 }
 
-.section-title {
-    margin-bottom: 50px;
-}
 /* ========END TEAM======== */
 
 /* ========CUSTOMERS======== */
