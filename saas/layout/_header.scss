@@ -1,26 +1,13 @@
-.logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--main-text-color);
-    cursor: pointer;
-
-    margin-right: 93px;
-}
-.logo-part {
-    color: var(--brand-color);
-}
 .navigation{
     display: flex;
     align-items: center;
 }
-.list-nav{
+.navigation__list{
     display: flex;
     min-width: 294px;
     padding: 32px 0px;
 }
-.list-nav-item .current::after {
+.navigation__link--current::after {
    content: "";
    display: block;
    width: auto;
@@ -31,29 +18,29 @@
    background-color: var(--brand-color);
 
 }
-.list-nav-item:not(:last-child) {
+.navigation__item:not(:last-child) {
     margin-right: 50px;
 }
-.list-nav .current {
+.navigation__link--current {
     color: var(--brand-color);
 }
-.list-nav,
+.navigation__list,
 .contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.list-nav-link {
+.navigation__link {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-nav-link:hover,
-.list-nav-link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
     color:var(--brand-color);
 }
-.header-icon{
+.contacts__icon{
     width: 16px;
     height: 12px;
     margin-right: 10px;
@@ -61,25 +48,25 @@
 .contacts{
     display: flex;
 }
-.contacts-mail{
+.contacts__mail{
     margin-right: 30px;
 }
-.contacts-link-mail, .contacts-link-tel {
+.contacts__mail-link, .contacts__tel-link {
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-link-mail:hover,   
-.contacts-link-mail:focus, 
-.header-icon:hover,
-.header-icon:focus {
+.contacts__mail-link:hover,   
+.contacts__mail-link:focus, 
+.contacts__icon:hover,
+.contacts__icon:focus {
     color:var(--brand-color);
     fill: var(--brand-color);
 }
-.contacts-link-tel:hover,   
-.contacts-link-tel:focus, 
-.header-icon:hover,
-.header-icon:focus {
+.contacts__tel-link:hover,   
+.contacts__tel-link:focus, 
+.contacts__icon:hover,
+.contacts__icon:focus {
     color:var(--brand-color);
     fill: var(--brand-color);
 }
