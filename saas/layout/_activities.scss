@@ -1,16 +1,20 @@
 .activities {
     padding-top: 0px;
     padding-bottom: 94px;
-}
-.activities__list {
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+&__list {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.activities__item {
+&__item {
     position: relative;
 }
-.activities__title {
+&__title {
     text-align: center;
     text-transform: uppercase;
     padding-top: 27px;
@@ -27,4 +31,5 @@
 
     background-color: rgba(47, 48, 58, 0.8);
     color: var(--main-background-color);
+}
 }

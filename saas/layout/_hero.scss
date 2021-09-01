@@ -1,4 +1,4 @@
-.hero-section{
+.hero{
     margin: 0 auto;
     max-width: 1600px;
     height: 600px;
@@ -10,7 +10,7 @@
     url("../images/Img-hero.jpg");
     background-size: cover;
 }
-.hero-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -19,7 +19,7 @@
     color: var(--main-background-color);
     margin-bottom: 30px;
 }
-.hero-button {
+.hero__button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -34,7 +34,7 @@
     color: var(--main-background-color);
     cursor: pointer;
 }
-.hero-container {
+.hero__container {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
